@@ -14,3 +14,11 @@ while (i < len)
 }
 
 We are replacing first character of the string with last character using a temp variable.
+
+
+
+
+
+----------
+
+reverse a string by modifying it
