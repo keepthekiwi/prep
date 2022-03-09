@@ -1,0 +1,25 @@
+2.
+ We need to write a program that takes one or several stings and for 
+each argument, capitalised the first character of each word, and display
+ it followed by a \n.
+
+eg; ./a.out "a FIRSt LiTTLE TESt"
+output: A First Little Test
+
+bei alpha mirror kriegst du einen string als eingabe
+jeder buchstabe (und zwar nur die buchstaben!) soll "gespiegelt" werden
+heißt A wird zu Z
+und z wird zu a
+B wäre dann Y
+ich hab in diesem fall daher auch die buchstaben gesondert behandelt, eine funktion für low, eine für up
+die haben dann jeweils einen char reinbekommen
+und dann habe ich den abstand in ascii gemessen
+in der "main" sah das dann so aus
+if (lower case)
+-> lower case funktion
+else if (upper case)
+-> upper case funktion
+else
+printe, was da ist (kann ja auch mal ne zahl oder n satzzeichen sein)
+ct++
+ich hab dann quasi gerechnet, dass es ja von Y zu Z nur 1 schritt ist, dass also der spiegelbuchstabe A + 1 wäre (und bei Z eben A + 0, weil kein abstand dazwischen liegt)

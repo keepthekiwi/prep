@@ -1,0 +1,16 @@
+1. String revers : I need to write a function that reverses a string by modifying it.
+Steps:
+    1. We need to find the length of the string
+    2: Then make length = length -1 (to get the last character in the string)
+    3. use another variable i = 0 ,
+
+while (i < len)
+{
+	tmp = str[i];
+	str[i] = str[len];
+	str[len] = tmp;
+	i++;
+	j—;
+}
+
+We are replacing first character of the string with last character using a temp variable.
