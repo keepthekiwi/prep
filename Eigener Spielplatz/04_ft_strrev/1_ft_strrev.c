@@ -56,9 +56,11 @@ char	*ft_strrev_v2(char *str)
 	len = ft_strlen_v2(str) - 1;
 	while (len > i)
 	{
+		//swap
 		tmp = str[i];
 		str[i] = str[len];
 		str[len] = tmp;
+		//
 		i++;
 		len--;
 	}
