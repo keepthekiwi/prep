@@ -1,0 +1,3 @@
+add_prime_sum.c gleiche wie prime_sum.c?
+
+prim_sum.c kam dran
