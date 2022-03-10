@@ -73,3 +73,5 @@ int main()
 	char *str2 = strdup("hello");		// V2
 	ft_strrev_v2(str);					// kann hier nicht einfach "hello" reinschreiben, da sonst bus-error...da es read only sein mus (???)
 }
+
+//Output: str ist-> olleh
