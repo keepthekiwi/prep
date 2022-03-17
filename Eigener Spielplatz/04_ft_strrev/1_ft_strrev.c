@@ -15,7 +15,7 @@ char	*ft_strrev(char *str)
 	char tmp;
 
 	i = 0;
-	len = ft_strlen(str) - 1;
+	len = ft_strlen(str) - 1;       // -1 !!
 	while (len > i)
 	{
 		tmp = str[i];
@@ -77,3 +77,19 @@ int main()
 }
 
 //Output: str ist-> olleh
+
+
+// int ft_strlen1(char *str)
+// {
+//     int i;
+
+//     i = 0;								// wichtig
+    
+//     while(*str)							// *
+//     {
+//         i++;
+//         str++;
+//     }
+//     printf("erste i: %i\n", i);
+//     return (i);
+// }
