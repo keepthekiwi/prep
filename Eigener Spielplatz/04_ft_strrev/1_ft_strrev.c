@@ -50,10 +50,10 @@ char	*ft_strrev_v2(char *str)
 {
 	int i;
 	int len;
-	char tmp;
+	char tmp;							//keinen Pointer
 
 	i = 0;
-	len = ft_strlen_v2(str) - 1;
+	len = ft_strlen_v2(str) - 1;		// -1 weil strlen
 	while (len > i)
 	{
 		//swap
@@ -61,7 +61,7 @@ char	*ft_strrev_v2(char *str)
 		str[i] = str[len];
 		str[len] = tmp;
 		//
-		i++;
+		i++;							//++ --
 		len--;
 	}
 	printf("str ist: %s", str);			//
@@ -78,6 +78,7 @@ int main()
 
 //Output: str ist-> olleh
 
+// oder einfach ft_strrev_v2("hello")
 
 // int ft_strlen1(char *str)
 // {

@@ -12,20 +12,20 @@
 #include <stdio.h>
 
 
-// int ft_strlen(char *str)
-// {
-// 	int	len;
+int ft_strlen(char *str)
+{
+	int	len;
 
-// 	while(*str)					// * beachten (weil * bedeutett Value vom Poiter), sonst adresse und die hat ja immer einen wert und somit unifite loop
-// 	{
-// 		len ++;
-// 		str ++;
-// 	}
-// 	return (len);
-// }
+	while(*str)					// * beachten (weil * bedeutett Value vom Poiter), sonst adresse und die hat ja immer einen wert und somit unifite loop
+	{
+		len ++;
+		str ++;
+	}
+	return (len);
+}
 
 
-int		ft_strlen(char *str)
+int		ft_strlen2(char *str)
 {
 	int i;
 
@@ -39,8 +39,13 @@ int		ft_strlen(char *str)
 int main ()
 {
 	int i;
+	int j;
+
 	i = ft_strlen("Hallo");
 	printf("len ist: %i\n", i);
+
+	j = ft_strlen2("Hallo");
+	printf("2len ist: %i\n", j);
 
 	return 0;
 }

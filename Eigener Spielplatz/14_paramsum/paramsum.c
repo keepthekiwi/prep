@@ -11,18 +11,18 @@ void	ft_putnbr(int nb)
 {
 	if (nb > 9)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		ft_putnbr(nb / 10);		//putnbr //zehnerpotenz
+		ft_putnbr(nb % 10);		// letzte zahl
 	}
 	else
-		ft_putchar(nb + '0');
+		ft_putchar(nb + '0');	//puchar  // ' '
 }
 
-int		main(int ac, char **av)
+int		main(int ac, char **av)	
 {
 	(void)av;
 	ac--;
 	ft_putnbr(ac);
-	ft_putchar('\n');
+	ft_putchar('\n');			// ' '
 	return (0);
 }

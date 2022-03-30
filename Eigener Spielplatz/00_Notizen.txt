@@ -9,4 +9,5 @@ unistd.h fuer write
 
 stdlib.h fuer atoi
 
+MAN nutzen!!!!
 

@@ -37,7 +37,7 @@ void	print_bits_v2(unsigned char octet)		// unsigend char geht max bis 256 (somi
 	{
 		if (octet >= i)							// erste Stelle 256 wird abgefangen
 		{
-			write(1, "1", 1);					// 256
+			write(1, "1", 1);					// 256		// " "
 			octet = octet % i;					// x % y = was von x uebrig bleibt
 			i = i / 2;							// Kommadinger verfallen
 		}
