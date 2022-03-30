@@ -20,7 +20,7 @@ void	ft_putstr(char *str)
 
 void	ft_putstr_2(char *str)
 {
-	while(*str)							// * nicht vergessen
+	while(*str)							// * nicht vergessen/ da wert nicht Adresse
 	{
 		write(1, &*str, 1);				// & und * nicht vergessen
 		str++;

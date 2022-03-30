@@ -5,6 +5,8 @@ Autosave on
 
 Miniprogramme schreiben um Details zu bekommen. zb int usgabe um zu sehen was A in Ascii ist
 
+unistd.h fuer write
 
+stdlib.h fuer atoi
 
 
