@@ -1,48 +1,41 @@
+
+
+
 #include <unistd.h>
-
-void	ft_putstr(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-}
+#include <stdio.h>
 
 int		ft_strlen(char *str)
 {
-	int i;
+	int	len;
+	len = 0;
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	while(*str)
+	{
+		str++;
+		len++;
+	}
+	return (len);
 }
 
-int		main(int ac, char **av)
+char	*rev_print(char *str)
 {
-	int	i;
-	int	len;
-	char	tmp;
+	int len;
+	// char c;
 
-	i = 0;
-	if (ac == 2)
+	len = ft_strlen(str) - 1;
+
+	while(len >= 0)
 	{
-		len = ft_strlen(av[1]);
+		// c= str[len];
+		write (1, &str[len], 1);
 		len--;
-		while (i < len)
-		{
-			tmp = av[1][i];
-			av[1][i] = av[1][len];
-			av[1][len] = tmp;
-			i++;
-			len--;
-		}
-		ft_putstr(av[1]);
 	}
-	write(1, "\n", 1);
-	return (0);
+	return (str);
+}
+
+
+int main()
+{
+	rev_print("hello");
+	return 0;
 }
