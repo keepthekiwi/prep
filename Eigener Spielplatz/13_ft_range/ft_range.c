@@ -29,6 +29,6 @@ int		*ft_range(int start, int end)
 		start--;
 		i++;
 	}
-	tab[i] = start;
+	tab[i] = start;					// zweimal??? // reicht iegentlich auch nur einmal unnten
 	return (tab);
 }

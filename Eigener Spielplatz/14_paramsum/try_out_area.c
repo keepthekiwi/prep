@@ -16,7 +16,7 @@ void	ft_putnbr(int nb)					// einzelne stellen
 		ft_putnbr(nb % 10);					// Rest mod10
 	}
 	else
-		ft_putchar(nb + '0');
+		ft_putchar(nb + '0');				//ausdrucken
 }
 
 int		main(int ac, char **av)

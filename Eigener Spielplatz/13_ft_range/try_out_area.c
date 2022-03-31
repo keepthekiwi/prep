@@ -16,7 +16,7 @@ int		*ft_range(int start, int end)
 	int *tab; //pointer
 
 	i = 0;
-	tab = (int*)malloc(sizeof(int) * ft_abs(start - end) + 1);
+	tab = (int*)malloc(sizeof(int) * ft_abs(start - end) + 1);			// why (int*)?
 
 	while (start < end)			// <
 	{

@@ -28,8 +28,6 @@ int		ft_strcmp(char *s1, char *s2)
 
 int ft_strcmp_2(char *s1, char *s2)
 {
-	int i;
-
 	while(*s1 && *s2 && *s1 == *s2)			// ==
 	{
 		s1++;								//mit i besser
