@@ -1,3 +1,7 @@
+
+
+//groesster gemeinsamer Nenner
+
 #include <stdio.h>
 #include <stdlib.h>
 

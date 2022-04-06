@@ -22,7 +22,7 @@ void	ft_putstr_2(char *str)
 {
 	while(*str)							// * nicht vergessen/ da wert nicht Adresse
 	{
-		write(1, &*str, 1);				// & und * nicht vergessen
+		write(1, str, 1);				//
 		str++;
 	}
 }
