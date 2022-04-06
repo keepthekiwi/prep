@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int		main(int ac, char **av)
+int		main(int ac, char **av) // ac start 1
 {
 	int a;
 	int b;
