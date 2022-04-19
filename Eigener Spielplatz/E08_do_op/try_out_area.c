@@ -18,7 +18,7 @@ int		main(int ac, char **av)
 	result = 0;
 	if (ac == 4)				// !
 	{
-		a = atoi(av[1]);
+		a = atoi(av[1]);		// atoi
 		op = av[2][0];			// warum [0]?
 		b = atoi(av[3]);
 		if (op == '+')			// ' '
@@ -31,7 +31,7 @@ int		main(int ac, char **av)
 			result = a / b;
 		else if (op == '%')		// modolo auch
 			result = a % b;
-		printf("%d\n", result);
+		printf("%d\n", result);	//printf
 	}
 	else
 		write(1, "\n", 1);
