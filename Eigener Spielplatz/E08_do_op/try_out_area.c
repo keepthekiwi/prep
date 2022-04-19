@@ -29,7 +29,7 @@ int		main(int ac, char **av)
 			result = a * b;
 		else if (op == '/')
 			result = a / b;
-		else if (op == '%')
+		else if (op == '%')		// modolo auch
 			result = a % b;
 		printf("%d\n", result);
 	}
