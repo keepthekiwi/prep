@@ -26,7 +26,7 @@ char	*rev_print(char *str)
 
 	while(len >= 0)
 	{
-		// c= str[len];
+		// c = str[len];
 		write (1, &str[len], 1);
 		len--;
 	}
@@ -38,4 +38,19 @@ int main()
 {
 	rev_print("hello");
 	return 0;
+}
+
+
+// Nicolai
+int main2(int ac, char *argv[])			// 2(!) Nikolai
+{
+	int i;
+
+	if (ac == 2)
+	{
+		i = ft_strlen(argv[1]);
+		while (i)
+			write(1, &argv[1][--i], 1);
+	}
+	write(1, "\n", 1);
 }
