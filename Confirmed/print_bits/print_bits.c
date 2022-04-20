@@ -11,9 +11,12 @@ void	print_bits(unsigned char octet)
 		{
 			write(1, "1", 1);
 			octet %= i;
+			i /= 2; 
 		}
 		else
+		{
 			write(1, "0", 1);
-		i /= 2; 
+			i /= 2;
+		}
 	}
 }
