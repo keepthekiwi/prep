@@ -6,7 +6,7 @@
 /*   By: skillian <skillian@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 10:24:11 by fpetras           #+#    #+#             */
-/*   Updated: 2022/04/06 15:39:19 by skillian         ###   ########.fr       */
+/*   Updated: 2022/04/21 16:27:15 by skillian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,12 @@ int		main(int ac, char **av)
 				tmp = av[1][i] + 1;
 				write(1, &tmp, 1);
 			}
-			else if (av[1][i] == 'Z' || av[1][i] == 'z')
-				(av[1][i] == 'Z') ? write(1, "A", 1) : write(1, "a", 1);   // ? <- hae???
+			else if (av[1][i] == 'Z')
+				write(1, "A", 1);
+			
+			else if (av[1][i] == 'z')
+				write(1, "a", 1); 
+				
 			else
 				write(1, &av[1][i], 1);
 			i++;
